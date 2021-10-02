@@ -12,6 +12,11 @@ function onGeoSuccess(position) {
       const city = document.querySelector("#weather span:last-child");
       city.innerText = data.name;
       weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+
+      const weahterImg = document.createElement("img");
+
+      weahterImg.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+      document.querySelector("#weather").append(weahterImg);
     });
 }
 

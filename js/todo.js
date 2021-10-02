@@ -11,6 +11,7 @@ function saveTodo() {
 }
 
 function deleteTodo(event) {
+  console.dir(event);
   const li = event.target.parentElement;
   li.remove();
 
@@ -22,10 +23,13 @@ function paintDoto(newTodo) {
   const li = document.createElement("li");
   li.id = newTodo.id;
   const span = document.createElement("span");
-  const button = document.createElement("button");
+  const button = document.createElement("i");
+
+  button.classList.add("fas");
+  button.classList.add("fa-times-circle");
+  button.classList.add("fa-lg");
 
   span.innerText = newTodo.text;
-  button.innerText = "X";
   button.addEventListener("click", deleteTodo);
 
   li.appendChild(span);

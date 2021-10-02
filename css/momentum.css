@@ -1,0 +1,133 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#clock {
+  width: 600px;
+  height: 100px;
+  color: white;
+  font-size: 75px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(10, 10, 10, 0.6);
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+#login-form {
+  width: 600px;
+  height: 200px;
+  margin-bottom: 50px;
+}
+
+#login-form input {
+  width: 400px;
+  height: 25px;
+  border: none;
+  background-color: var(--background-color);
+  border-radius: 10px;
+}
+
+#login-form label[for="login-form__name"] {
+  font-size: 30px;
+  color: black;
+}
+
+#login-form input:not([type="submit"]) {
+  padding: 20px 20px;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#login-form input[type="submit"] {
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: var(--background-color);
+}
+
+.login-form--empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#greeting {
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 30px;
+  background-color: var(--background-color);
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+#todo-form {
+  width: 400px;
+  height: 60px;
+  display: flex;
+}
+
+#todo-form input {
+  font-size: 30px;
+  width: 400px;
+  height: 50px;
+  border: none;
+  padding: 0px 20px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+}
+
+#todo-form input::placeholder {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: center;
+}
+
+#todo-list {
+  width: 600px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#todo-list li span {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+#todo-list li i {
+  padding-top: 8px;
+}
+
+#weather {
+  width: 250px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  background-color: var(--background-color);
+  border-radius: 5px;
+}

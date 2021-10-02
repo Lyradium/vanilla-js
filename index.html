@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="css/style.css" />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <h2 id="clock"></h2>
-    <form id="login-form" class="hidden">
-      <input required maxlength="15" type="text" placeholder="What is your name?" />
+    <form id="login-form" class="login-form--empty hidden">
+      <label for="login-form__name">What is your name?</label>
+      <input required maxlength="15" id="login-form__name" type="text" />
       <input type="submit" value="Log in" />
     </form>
     <h1 id="greeting" class="hidden"></h1>
@@ -19,9 +21,11 @@
     </form>
     <ul id="todo-list"></ul>
     <div id="weather"><span></span><span></span></div>
+    <script src="js/background.js"></script>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
   </body>
 </html>
